@@ -38,6 +38,9 @@ Miller Call to split party.
 
 Test Case 2:
 
+Input:
+Please enter number of rows for a theatre layout:
+3
 Please enter theatre layout where each row is made up of
 1 or more sections separated by a space.
 3 4
@@ -46,21 +49,61 @@ Please enter theatre layout where each row is made up of
 Please enter ticket requests:
 name followed by a space and the number of requested tickets:
 Please type "end" when done.
-John 5
+john 5
 williams 4
-Wilson 2
-Johnson 2
-Brown 2
-Tom 1
-Jackson 6
+wilson 2
+johnson 2
+brown 2
+tom 1
+jackson 6
+jason 6
 end
 
 Output:
 
-John Row 3 Section 1
+john Row 3 Section 1
 williams Row 1 Section 2
-Wilson Row 2 Section 2
-Johnson Row 1 Section 1
-Brown Row 2 Section 1
-Tom Row 1 Section 1
-Jackson Row 3 Section 3
+wilson Row 2 Section 2
+johnson Row 1 Section 1
+brown Row 2 Section 1
+tom Row 1 Section 1
+jackson Row 3 Section 3
+jason Call to split party
+
+
+
+Test Case 3:
+
+Input:
+Please enter number of rows for a theatre layout:
+5
+Please enter theatre layout where each row is made up of
+1 or more sections separated by a space.
+5 5
+3 5 3
+3 2 3 2
+5 5 5 5
+3 3 4 4
+Please enter ticket requests:
+name followed by a space and the number of requested tickets:
+Please type "end" when done.
+smith 4
+john 3
+jasmine 10
+jackson 2
+jason 5
+jess 1
+wilson 50
+brown 51
+end
+
+Output:
+
+smith Row 1 Section 1
+john Row 2 Section 1
+jasmine Call to split party.
+jackson Row 1 Section 2
+jason Row 2 Section 2
+jess Row 1 Section 1
+wilson Call to split party.
+brown Sorry, we can't handle your party.
