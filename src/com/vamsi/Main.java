@@ -9,7 +9,7 @@ public class Main {
 	public static void main(String[] args) {
 		int totalSeats = 0;
 		int maxSeats = 0;
-		System.out.println("input:");
+		System.out.println("Input:");
 		System.out.println("Please enter number of rows for a theatre layout:");
 		Scanner scanner = new Scanner(System.in);
 		List<Row> Rows = new ArrayList<Row>();
@@ -66,7 +66,7 @@ public class Main {
 		}
 		scanner.close();
 
-		System.out.println("Output:");
+		System.out.println("\nOutput:\n");
 		for (Customer c : customers) {
 			int count = 0;
 			for (Row r1 : Rows) {

@@ -1,0 +1,66 @@
+Test Case 1:
+
+Input:
+Please enter number of rows for a theatre layout:
+5
+Please enter theatre layout where each row is made up of
+1 or more sections separated by a space.
+6 6
+3 5 5 3
+4 6 6 4
+2 8 8 2
+6 6
+Please enter ticket requests:
+name followed by a space and the number of requested tickets:
+Please type "end" when done.
+Smith 2
+Jones 5
+Davis 6
+Wilson 100
+Johnson 3
+Williams 4
+Brown 8
+Miller 12
+end
+
+Output:
+
+Smith Row 1 Section 1
+Jones Row 2 Section 2
+Davis Row 1 Section 2
+Wilson Sorry, we can't handle your party.
+Johnson Row 2 Section 1
+Williams Row 1 Section 1
+Brown Row 4 Section 2
+Miller Call to split party.
+
+
+
+Test Case 2:
+
+Please enter theatre layout where each row is made up of
+1 or more sections separated by a space.
+3 4
+4 2
+5 5 6
+Please enter ticket requests:
+name followed by a space and the number of requested tickets:
+Please type "end" when done.
+John 5
+williams 4
+Wilson 2
+Johnson 2
+Brown 2
+Tom 1
+Jackson 6
+end
+
+Output:
+
+John Row 3 Section 1
+williams Row 1 Section 2
+Wilson Row 2 Section 2
+Johnson Row 1 Section 1
+Brown Row 2 Section 1
+Tom Row 1 Section 1
+Jackson Row 3 Section 3
