@@ -75,7 +75,10 @@ public class Main {
 				for (Section s : r1.getSections()) {
 					int seats = s.getNumOfSeats();
 
-					if (c.getRequestedSeats() > 0 && seats == c.getRequestedSeats() && count <= 2) {
+					if (c.getRequestedSeats() > 0 && seats == c.getRequestedSeats() && count <= 2) { 
+						
+						//trying to put parties as close to the front as possible by giving first two rows highest priority 
+						
 						System.out.println(
 								c.getCustomerName() + " Row " + r1.getRowid() + " Section " + s.getSectionid());
 						s.setNumOfSeats(s.getNumOfSeats() - c.getRequestedSeats());
