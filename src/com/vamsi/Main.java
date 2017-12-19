@@ -8,7 +8,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		int totalSeats = 0;
-		int maxSeats = 0;
+		//int maxSeats = 0;
 		System.out.println("Input:");
 		System.out.println("Please enter number of rows for a theatre layout:");
 		Scanner scanner = new Scanner(System.in);
@@ -27,7 +27,7 @@ public class Main {
 				Section s = new Section();
 				s.setSectionid(j + 1);
 				s.setNumOfSeats(Integer.parseInt(numberStrs[j]));
-				maxSeats = maxSeats >= Integer.parseInt(numberStrs[j]) ? maxSeats : Integer.parseInt(numberStrs[j]);
+				//maxSeats = maxSeats >= Integer.parseInt(numberStrs[j]) ? maxSeats : Integer.parseInt(numberStrs[j]);
 				totalSeats = totalSeats + Integer.parseInt(numberStrs[j]);
 				sections.add(s);
 				// System.out.println(s.getSectionid()+" "+s.getNumOfSeats());
@@ -101,9 +101,9 @@ public class Main {
 
 				}
 			}
-			if (c.getRequestedSeats() > 0 && maxSeats <= c.getRequestedSeats() && totalSeats >= c.getRequestedSeats()) {
+			if (c.getRequestedSeats() > 0 && totalSeats >= c.getRequestedSeats()) {
 				System.out.println(c.getCustomerName() + " Call to split party.");
-			} else if (c.getRequestedSeats() > 0 && maxSeats <= c.getRequestedSeats()
+			} else if (c.getRequestedSeats() > 0 
 					&& totalSeats < c.getRequestedSeats()) {
 				System.out.println(c.getCustomerName() + " Sorry, we can't handle your party.");
 			}
